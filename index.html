@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎉 Interactive Web Experience</h1>
+
+  <!-- 1. Event Handling -->
+  <button id="magicButton">Click Me!</button>
+  <p id="hoverMessage">Hover over me!</p>
+  <input type="text" id="keypressBox" placeholder="Type something..." />
+
+  <!-- 2. Interactive Elements -->
+  <div class="gallery">
+    <img src="https://media.istockphoto.com/id/2159065904/photo/little-dirty-stray-kitten.jpg?s=612x612&w=is&k=20&c=mGKjpsgDkHsmkEZXEl3Ta8Doa1seTv8INQNoeS-E2qs=" id="mainImg" alt="Kitten" />
+    <div class="thumbnails">
+      <img src="https://media.istockphoto.com/id/2165337331/photo/portrait-of-tabby-cat.jpg?s=612x612&w=is&k=20&c=BPLUO1csXatsskhRoKLScUpYSCv1Fj5Im5wAk0OS3CY=" alt="Kitten 1" />
+      <img src="https://media.istockphoto.com/id/1170736928/photo/kitten-and-the-owner.jpg?s=612x612&w=is&k=20&c=aopYk1jNPai30TBAhXpAbi9thNmTWXC100bHMQ4e3Kg=" alt="Kitten 2" />
+      <img src="https://media.istockphoto.com/id/2159065873/photo/little-dirty-stray-kitten.jpg?s=612x612&w=is&k=20&c=PetAEVRZYebW051XKauDSDqEi4_iDMbasb_TWHTChWI=" alt="Kitten 3" />
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab" data-tab="one">Tab 1</button>
+    <button class="tab" data-tab="two">Tab 2</button>
+  </div>
+  <div class="tab-content active" id="gallery1">
+    <img src="https://media.istockphoto.com/id/939431230/photo/outdoor-japanese-cat.jpg?s=612x612&w=is&k=20&c=I5MeTb_9ncMBJGveBSjCXzbjFuBgu9PC--vSb-H7M3U=" alt="Kitten A" />
+    <img src="https://media.istockphoto.com/id/939431230/photo/outdoor-japanese-cat.jpg?s=612x612&w=is&k=20&c=I5MeTb_9ncMBJGveBSjCXzbjFuBgu9PC--vSb-H7M3U=" alt="Kitten B" />
+    <img src="https://media.istockphoto.com/id/939453198/photo/outdoor-japanese-cat.jpg?s=612x612&w=is&k=20&c=U70OsjZyyHCh_MgzVGCO-iZDgEYlwG93y2FUeNMf0DQ=" alt="Kitten C" />
+  </div>
+  
+  <div class="tab-content" id="gallery2">
+    <img src="https://media.istockphoto.com/id/939453198/photo/outdoor-japanese-cat.jpg?s=612x612&w=is&k=20&c=U70OsjZyyHCh_MgzVGCO-iZDgEYlwG93y2FUeNMf0DQ=" alt="Kitten D" />
+    <img src="https://media.istockphoto.com/id/939453198/photo/outdoor-japanese-cat.jpg?s=612x612&w=is&k=20&c=U70OsjZyyHCh_MgzVGCO-iZDgEYlwG93y2FUeNMf0DQ=" alt="Kitten E" />
+    <img src="https://media.istockphoto.com/id/939453198/photo/outdoor-japanese-cat.jpg?s=612x612&w=is&k=20&c=U70OsjZyyHCh_MgzVGCO-iZDgEYlwG93y2FUeNMf0DQ=" alt="Kitten F" />
+  </div>
+  
+
+  <!-- 3. Form Validation -->
+  <form id="signupForm">
+    <h2>Signup Form</h2>
+    <input type="text" id="username" placeholder="Username" required /><br />
+    <input type="email" id="email" placeholder="Email" required /><br />
+    <input type="password" id="password" placeholder="Password (min 8 chars)" required /><br />
+    <button type="submit">Register</button>
+    <p id="feedback"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
